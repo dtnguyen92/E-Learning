@@ -4,31 +4,41 @@ class CourseService {
     fetchCourseDetail(id) {
         return Axios({
             method: 'GET',
-            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=${id}`
+            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=${id}`,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
         })
     }
     fetchCourse() {
         return Axios({
             method: 'GET',
-            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP11`
+            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP11`,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
         })
     }
-    fetchCategory(){
+    fetchCategory() {
         return Axios({
             method: 'GET',
-            url: 'http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhMucKhoaHoc'
+            url: 'http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhMucKhoaHoc',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
         })
     }
-    fetchCategoryDetail(name){
+    fetchCategoryDetail(name) {
         return Axios({
             method: 'GET',
-            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=${name}&MaNhom=GP01`
+            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=${name}&MaNhom=GP01`,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
         })
     }
-    fetchCourseSearch(keyword){
+    fetchCourseSearch(keyword) {
         return Axios({
             method: "GET",
-            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?tenKhoaHoc=${keyword}&MaNhom=GP01`
+            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?tenKhoaHoc=${keyword}&MaNhom=GP01`,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
         })
     }
 }

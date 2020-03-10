@@ -6,16 +6,20 @@ class UserServices {
         return Axios({
             method: 'POST',
             url: "http://elearning0706.cybersoft.edu.vn/api/QuanLyNguoiDung/DangKy",
-            data
+            data,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
         })
     }
-    signIn(user){
+    signIn(user) {
         return Axios({
             method: 'POST',
             url: "http://elearning0706.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
-            data: user
+            data: user,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
         })
     }
-    
+
 }
 export default UserServices;
