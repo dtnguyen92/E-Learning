@@ -28,7 +28,7 @@ class CourseService {
     fetchCategoryDetail(name) {
         return Axios({
             method: 'GET',
-            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=${name}&MaNhom=GP01`,
+            url: `https://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=${name}&MaNhom=GP01`,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
         })
@@ -36,7 +36,7 @@ class CourseService {
     fetchCourseSearch(keyword) {
         return Axios({
             method: "GET",
-            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?tenKhoaHoc=${keyword}&MaNhom=GP01`,
+            url: `https://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?tenKhoaHoc=${keyword}&MaNhom=GP01`,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
         })
