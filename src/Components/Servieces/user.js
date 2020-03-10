@@ -5,7 +5,7 @@ class UserServices {
     signUp(data) {
         return Axios({
             method: 'POST',
-            url: "http://elearning0706.cybersoft.edu.vn/api/QuanLyNguoiDung/DangKy",
+            url: "https://elearning0706.cybersoft.edu.vn/api/QuanLyNguoiDung/DangKy",
             data,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
@@ -14,7 +14,7 @@ class UserServices {
     signIn(user) {
         return Axios({
             method: 'POST',
-            url: "http://elearning0706.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
+            url: "https://elearning0706.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
             data: user,
             contentType: "application/json; charset=utf-8",
             dataType: "json",

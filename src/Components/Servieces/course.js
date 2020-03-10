@@ -4,7 +4,7 @@ class CourseService {
     fetchCourseDetail(id) {
         return Axios({
             method: 'GET',
-            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=${id}`,
+            url: `https://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=${id}`,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
         })
@@ -12,7 +12,7 @@ class CourseService {
     fetchCourse() {
         return Axios({
             method: 'GET',
-            url: `http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP11`,
+            url: `https://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP11`,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
         })
@@ -20,7 +20,7 @@ class CourseService {
     fetchCategory() {
         return Axios({
             method: 'GET',
-            url: 'http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhMucKhoaHoc',
+            url: 'https://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhMucKhoaHoc',
             contentType: "application/json; charset=utf-8",
             dataType: "json",
         })
