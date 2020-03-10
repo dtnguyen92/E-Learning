@@ -1,0 +1,15 @@
+.CartItem{
+    position: absolute;
+    top: 55px;
+    right: 100px;
+}
+.CartItem__detail {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.CartDelete{
+    right: 20px;
+}

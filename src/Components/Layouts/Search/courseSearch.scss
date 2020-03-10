@@ -1,0 +1,14 @@
+.courseSearch{
+    position: absolute;
+    right: 300px;
+    left: 600px;
+    top: 60px;
+    overflow: auto;
+}
+.courseDetail{
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

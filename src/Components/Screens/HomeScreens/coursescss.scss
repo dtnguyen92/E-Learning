@@ -1,0 +1,106 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.loading{
+    background: url('../../../img/3159557.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+.rocket{
+    left: 50%;
+    position: absolute;
+    top: 30%;
+}
+.rocket2{
+    left: 923px;
+    position: absolute;
+    top: 142px;
+    width: 80px;
+}
+.rocket3{
+    left: 923px;
+    position: absolute;
+    top: 302px;
+    width: 160px;
+}
+#goright{
+    position: absolute;
+    right: 20px;
+    top: 200px;
+    z-index: 10;
+}
+#goleft{
+    left: 45%;
+    left: 20px;
+    position: absolute;
+    top: 200px;
+    z-index: 10;
+}
+.carousel{
+    display: flex;
+    margin: 40px auto;
+    position: relative;
+    width: 100%;
+    
+}
+.cards-slide{
+    margin: 0 5px;
+    position: relative;
+    top: 100px;
+}
+.cards-slide-wrapper{
+    display: flex;
+    
+}
+.cards-slide .active-cards16{
+    margin-right: 40px;
+}
+
+.buttonClick{
+    margin: 0;
+    position: relative;
+    top: 40px;
+}
+.tenKhoaHoc{
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.iconShopping{
+    color: blue($color: #000000);
+}
+@keyframes carousel {
+    0% {
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(1700px);
+    }
+    100%{
+        transform:  translate(-1000px);
+    }
+}
+.course{
+    position: absolute;
+    top: 70px;
+}
+.Cart{
+    display: flex;
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    z-index: 50;
+}
+.danhMuc{
+    top: 100px;
+}
+.Search{
+    float: right;
+    right: 80px;
+}
